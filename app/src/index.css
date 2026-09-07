@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background:#f0f0f0; }
+table { border-collapse: collapse; width: 100%; }
+td, th { border: 1px solid #ccc; padding: 6px; font-size: 13px; }
+.btn { background:#c0142c; color:#fff; padding:8px 12px; border:none; cursor:pointer; }
+.spin { padding:40px; text-align:center; color:#888; }
