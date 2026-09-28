@@ -1,0 +1,5 @@
+export * from './supabaseHelpers.ts'
+export * from './SupabaseAlumnoRepository.ts'
+export * from './SupabaseTutorRepository.ts'
+export * from './SupabaseCuotaRepository.ts'
+export * from './SupabasePagoRepository.ts'
