@@ -43,6 +43,10 @@ create table pagos (
 create or replace function buscar_alumnos(q text)
 returns setof alumnos as $$
 begin
-  return query execute 'select * from alumnos where nombre ilike ''%' || q || '%'' or apellido ilike ''%' || q || '%''';
+  return query
+  select * from alumnos
+  where nombre ilike ('%' || q || '%')
+     or apellido ilike ('%' || q || '%');
 end;
 $$ language plpgsql;
+
